@@ -24,7 +24,7 @@ const ownerRouter = require('./Route/ownerRouter');
 
 
 app.use(cors({
-  origin: 'https://irodovplusclasses.in', // or '*' for all origins (not recommended for production)
+  origin: 'https://irodovplusclasses.onrender.com', // or '*' for all origins (not recommended for production)
   credentials: true // if you use cookies
 }));
 
