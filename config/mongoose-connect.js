@@ -5,9 +5,11 @@ const  config = require('config');
 mongoose
 .connect(`${config.get('MONGO_URI')}/Irodov`)
 .then(function() {
+    console.log("Connected to MongoDB successfully");
     dbgr("Connected to MongoDB");
 })
 .catch(function(err) {
+    console.error("Error connecting to MongoDB:", err.message);
     dbgr("Error connecting to MongoDB:", err);
 });
 
